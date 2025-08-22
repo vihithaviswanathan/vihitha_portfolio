@@ -208,7 +208,7 @@ const Home: React.FC = () => {
             {[
               { label: 'CGPA', value: '8.63/10' },
               { label: 'Projects', value: '10+' },
-              { label: 'Experience', value: '2 Years' },
+              { label: 'Experience', value: 'Fresher' },
               { label: 'Certifications', value: '3+' }
             ].map((stat, index) => (
               <motion.div
