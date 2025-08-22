@@ -46,9 +46,9 @@ const About: React.FC = () => {
   ];
 
   const skills = {
-    'Languages & Frameworks': ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Python'],
+    'Languages & Frameworks': ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Java'],
     'Design Tools': ['Figma', 'Canva', 'Adobe Express'],
-    'IoT Platforms': ['ESP8266', 'Blynk App'],
+    'Testing Tools': ['Selenium', 'Playwright'],
     'Tools & Concepts': ['GitHub', 'VS Code', 'Networking Fundamentals'],
     'Soft Skills': ['Communication', 'Teamwork', 'Creativity']
   };
