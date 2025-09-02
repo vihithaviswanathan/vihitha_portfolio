@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       description: 'A modern, responsive web application that allows users to log, view, and manage their daily thoughts, tasks, or reflections. This project demonstrates a seamless full-stack implementation of a journaling platform using modern frontend technologies and serverless backend services.',
       image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'CSS3', 'Responsive Design'],
-      liveUrl: 'https://daily-journal-c3w4.vercel.app/',
+      liveUrl: 'https://daily-journal-c3w4-hkui60sxw-vihithas-projects.vercel.app/',
       githubUrl: '#',
       category: 'Full Stack',
       status: 'Completed',
