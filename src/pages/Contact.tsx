@@ -42,7 +42,7 @@ Message: ${formData.message}`;
       icon: Mail,
       label: 'Email',
       value: 'vihitha0907@gmail.com',
-      href: 'mailto:vihitha0907@gmail.com',
+      url: 'https://github.com/vihithaviswanathan',
       color: 'text-red-600 dark:text-red-400'
     },
     {
