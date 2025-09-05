@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:vihitha0907@gmail.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com',
       color: 'hover:text-red-600 dark:hover:text-red-400'
     }
   ];
