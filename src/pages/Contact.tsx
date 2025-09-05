@@ -21,11 +21,9 @@ Message: ${formData.message}`;
     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     if (isMobile) {
-      // Mobile: WhatsApp
       const whatsappUrl = `https://wa.me/919080636429?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, "_blank");
     } else {
-      // Desktop: Gmail
       const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com&su=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(message)}`;
       window.open(gmailUrl, "_blank");
     }
@@ -42,21 +40,18 @@ Message: ${formData.message}`;
       icon: Mail,
       label: 'Email',
       value: 'vihitha0907@gmail.com',
-      url: 'mailto:vihitha0907@gmail.com',
       color: 'text-red-600 dark:text-red-400'
     },
     {
       icon: Phone,
       label: 'Phone',
       value: '+91 9080636429',
-      href: 'tel:+919080636429',
       color: 'text-green-600 dark:text-green-400'
     },
     {
       icon: MapPin,
       label: 'Location',
       value: 'Bangalore, Karnataka',
-      href: '#',
       color: 'text-blue-600 dark:text-blue-400'
     }
   ];
@@ -156,25 +151,25 @@ Message: ${formData.message}`;
           {/* Contact Information & Social Links */}
           <motion.div initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="space-y-8">
             
-            {/* Contact Info */}
+            {/* Contact Info (Non-clickable) */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
-              {contactInfo.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div key={item.label} className="flex items-center space-x-3 mb-4">
-                    <Icon className={`h-6 w-6 ${item.color}`} />
-                    <a href={item.href || item.url} className="underline hover:text-blue-600 dark:hover:text-blue-400">
-                      {item.value}
-                    </a>
-                  </div>
-                );
-              })}
+              <div className="space-y-4">
+                {contactInfo.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <div key={item.label} className="flex items-center space-x-3">
+                      <Icon className={`h-6 w-6 ${item.color}`} />
+                      <span className="text-gray-700 dark:text-gray-300">{item.value}</span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Social Links */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Connect with me</h3>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Connect with Me</h3>
               <div className="flex space-x-6">
                 {socialLinks.map((link) => {
                   const Icon = link.icon;
