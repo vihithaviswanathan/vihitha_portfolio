@@ -75,9 +75,10 @@ Message: ${formData.message}`;
       color: 'hover:text-gray-900 hover:bg-gray-50 dark:hover:bg-gray-700'
     },
     {
+
       name: 'Email',
       icon: Mail,
-      url: 'mailto:vihitha0907@gmail.com',
+      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com',
       color: 'hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20'
     }
   ];
