@@ -207,7 +207,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { label: 'CGPA', value: '8.63/10' },
-              { label: 'Projects', value: '10+' },
+              { label: 'Projects', value: '5' },
               { label: 'Experience', value: 'Fresher' },
               { label: 'Certifications', value: '3+' }
             ].map((stat, index) => (
