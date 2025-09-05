@@ -11,12 +11,23 @@ const Contact: React.FC = () => {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission (you can integrate with a backend service)
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
+  e.preventDefault();
+
+  // Create message with form data
+  const message = `Hello, my name is ${formData.name}.
+Email: ${formData.email}
+Subject: ${formData.subject}
+Message: ${formData.message}`;
+
+  // WhatsApp API link
+  const whatsappUrl = `https://wa.me/919080636429?text=${encodeURIComponent(message)}`;
+
+  // Open WhatsApp with the pre-filled message
+  window.open(whatsappUrl, "_blank");
+
+  // Reset form
+  setFormData({ name: '', email: '', subject: '', message: '' });
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
