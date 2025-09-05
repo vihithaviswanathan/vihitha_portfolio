@@ -13,17 +13,22 @@ const Contact: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
 
-  // Create message with form data
   const message = `Hello, my name is ${formData.name}.
 Email: ${formData.email}
 Subject: ${formData.subject}
 Message: ${formData.message}`;
 
-  // WhatsApp API link
-  const whatsappUrl = `https://wa.me/919080636429?text=${encodeURIComponent(message)}`;
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  // Open WhatsApp with the pre-filled message
-  window.open(whatsappUrl, "_blank");
+  if (isMobile) {
+    // Mobile: open WhatsApp app
+    const whatsappUrl = `https://wa.me/919080636429?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
+  } else {
+    // Desktop: open Gmail in browser
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com&su=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(message)}`;
+    window.open(gmailUrl, "_blank");
+  }
 
   // Reset form
   setFormData({ name: '', email: '', subject: '', message: '' });
