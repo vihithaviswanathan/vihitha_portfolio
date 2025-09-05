@@ -77,8 +77,16 @@ Message: ${formData.message}`;
     {
       name: 'Email',
       icon: Mail,
-      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com',
-      color: 'hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20'
+      color: 'hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-900/20',
+      onClick: () => {
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+          window.location.href = 'mailto:vihitha0907@gmail.com';
+        } else {
+          const gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com';
+          window.open(gmailUrl, '_blank');
+        }
+      }
     }
   ];
 
@@ -150,4 +158,57 @@ Message: ${formData.message}`;
             
             {/* Contact Info */}
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Contact Information</h3>
+              {contactInfo.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div key={item.label} className="flex items-center space-x-3 mb-4">
+                    <Icon className={`h-6 w-6 ${item.color}`} />
+                    <a href={item.href || item.url} className="underline hover:text-blue-600 dark:hover:text-blue-400">
+                      {item.value}
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Social Links */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Connect with me</h3>
+              <div className="flex space-x-6">
+                {socialLinks.map((link) => {
+                  const Icon = link.icon;
+                  return link.onClick ? (
+                    <motion.button
+                      key={link.name}
+                      onClick={link.onClick}
+                      className={`text-gray-600 dark:text-gray-400 ${link.color} transition-colors duration-200`}
+                      whileHover={{ scale: 1.2, y: -2 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Icon className="h-6 w-6" />
+                    </motion.button>
+                  ) : (
+                    <motion.a
+                      key={link.name}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`text-gray-600 dark:text-gray-400 ${link.color} transition-colors duration-200`}
+                      whileHover={{ scale: 1.2, y: -2 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <Icon className="h-6 w-6" />
+                    </motion.a>
+                  );
+                })}
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
