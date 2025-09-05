@@ -42,7 +42,7 @@ Message: ${formData.message}`;
       icon: Mail,
       label: 'Email',
       value: 'vihitha0907@gmail.com',
-      url: 'https://mail.google.com/mail/?view=cm&fs=1&to=vihitha0907@gmail.com',
+      url: 'mailto:vihitha0907@gmail.com',
       color: 'text-red-600 dark:text-red-400'
     },
     {
