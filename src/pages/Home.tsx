@@ -167,7 +167,7 @@ const Home: React.FC = () => {
                   <div className="w-80 h-80 mx-auto rounded-2xl bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-700 dark:to-gray-600 flex items-center justify-center overflow-hidden">
                     {/* Placeholder for profile image */}
                     <img
-                      src="https://img.freepik.com/free-photo/brunette-business-woman-with-wavy-long-hair-blue-eyes-stands-holding-notebook-hands_197531-343.jpg?semt=ais_hybrid&w=740&q=80"
+                      src="portfolio.jpg"
                       alt="Vihitha V - Professional Profile"
                       className="w-full h-full object-cover"
                     />
