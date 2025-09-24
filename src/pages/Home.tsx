@@ -4,7 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail, MapPin, Phone } from 'luc
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
-  const skills = ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Figma', 'Java', 'Testing'];
+  const skills = ['React.js', 'JavaScript', 'HTML5', 'CSS3', 'Figma', 'Java', 'SoftwareTesting'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900">
