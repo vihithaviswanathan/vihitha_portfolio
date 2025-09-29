@@ -5,34 +5,20 @@ import { Briefcase, Calendar, MapPin, TrendingUp, Users, Zap, FileText } from 'l
 const Experience: React.FC = () => {
   const experiences = [
     {
-      title: 'Digital Marketing Intern',
-      company: 'Creations',
-      period: 'May – July 2023',
-      location: 'Remote',
+      title: 'Frontend Developer Intern',
+      company: 'Azban Fixation Private Limited',
+      period: 'Sep 2025- Present',
+      location: 'Bangalore',
       type: 'Internship',
       achievements: [
-        'Designed 30+ interactive posters using Adobe Express, increasing engagement by 25%',
-        'Collaborated with cross-functional teams to plan social campaigns, enhancing brand reach',
-        'Demonstrated adaptability and strong communication in a fast-paced environment'
+        'Contributing to the development of JavaScript and Vue.js based web applications.',
+        'Implemented JWT-based authentication and API integrations to ensure secure client-server communication.',
+        'Collaborating in a small team environment to build scalable and maintainable frontend solutions.',
+        'Optimizing UI for performance, responsiveness, and cross-browser compatibility',
       ],
-      skills: ['Adobe Express', 'Digital Marketing', 'Social Media', 'Team Collaboration'],
+      skills: ['JavaScript', 'Vue.js', 'API Integration', 'Team Collaboration'],
       icon: TrendingUp,
       color: 'from-pink-500 to-rose-500'
-    },
-    {
-      title: 'IoT Intern',
-      company: 'Fantasy Solution',
-      period: 'May – July 2022',
-      location: 'Remote',
-      type: 'Internship',
-      achievements: [
-        'Developed an IoT device using ESP8266 and the Blynk platform, which enabled real-time remote monitoring',
-        'Reduced manual checks by 50%, and increased data accuracy by 30%',
-        'Integrated sensor data into a mobile interface to improve system responsiveness'
-      ],
-      skills: ['ESP8266', 'Blynk Platform', 'IoT Development', 'Mobile Integration'],
-      icon: Zap,
-      color: 'from-blue-500 to-cyan-500'
     }
   ];
 
