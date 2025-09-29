@@ -242,7 +242,7 @@ const Projects: React.FC = () => {
             Let's create something amazing together!
           </p>
           <motion.a
-            href = "mailto:vihiha0907@gmail.com"
+            href="/Contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200"
