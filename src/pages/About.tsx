@@ -46,7 +46,7 @@ const About: React.FC = () => {
   ];
 
   const skills = {
-    'Languages & Frameworks': ['HTML5', 'CSS3', 'JavaScript', 'React.js', 'Java'],
+    'Languages & Frameworks': ['HTML5', 'CSS3', 'JavaScript','Vue.js' ,'React.js', 'Core Java'],
     'Design Tools': ['Figma', 'Canva', 'Adobe Express'],
     'Testing Tools': ['Selenium', 'Playwright'],
     'Tools & Concepts': ['GitHub', 'VS Code', 'Networking Fundamentals'],
