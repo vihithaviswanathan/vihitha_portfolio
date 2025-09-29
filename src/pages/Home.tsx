@@ -32,7 +32,7 @@ const Home: React.FC = () => {
                   </span>
                 </h1>
                 <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 font-medium">
-                  Frontend Developer & UI Designer
+                  Frontend Developer 
                 </p>
               </motion.div>
 
