@@ -46,7 +46,7 @@ const About: React.FC = () => {
   ];
 
   const skills = {
-    'Languages & Frameworks': ['JavaScript','Vue.js' ,'React.js', 'Core Java'],
+    'Languages & Frameworks': ['JavaScript','Vue.js' ,'Vuex','SQL', 'Core Java'],
     'Design Tools': ['Figma', 'Canva', 'Adobe Express'],
     'Tools & Concepts': ['GitHub', 'VS Code', 'Networking Fundamentals'],
     'Soft Skills': ['Communication', 'Teamwork', 'Creativity']
