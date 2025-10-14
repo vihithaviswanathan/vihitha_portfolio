@@ -4,7 +4,7 @@ import { ArrowRight, Download, Github, Linkedin, Mail, MapPin, Phone } from 'luc
 import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
-  const skills = ['Vue.js', 'Vuex', 'JavaScript', 'Figma', 'SQL', 'Core Java', 'API Integration'];
+  const skills = ['Vue.js (composition API)', 'JavaScript', 'Figma', 'SQL', 'Core Java', 'API Integration'];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-blue-900">
