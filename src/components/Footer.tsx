@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
 
           {/* Location */}
           <p className="text-sm text-gray-500 dark:text-gray-500">
-            Bangalore, Karnataka | vihitha0907@gmail.com | 9080636429
+            Bangalore, Karnataka | vihitha0907@gmail.com | +91 XXXXXXXX
           </p>
         </div>
       </div>
