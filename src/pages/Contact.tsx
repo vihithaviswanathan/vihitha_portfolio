@@ -45,7 +45,7 @@ Message: ${formData.message}`;
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 XXXXX',
+      value: '+91 9080636429',
       color: 'text-green-600 dark:text-green-400'
     },
     {
