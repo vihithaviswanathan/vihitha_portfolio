@@ -21,12 +21,29 @@ const Projects: React.FC = () => {
         'Advanced search and filtering'
       ]
     },
+    
     {
       title: 'FoodGo - Food Delivery App Design',
       description: 'A comprehensive UI/UX design for a modern food delivery application. Created detailed wireframes, user flows, and high-fidelity prototypes focusing on user experience and accessibility.',
       image: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['Figma', 'UI/UX Design', 'Prototyping', 'User Research'],
       figmaUrl: 'https://www.figma.com/proto/LIwJUO6odP8K04VADrNMPU/foodgo?node-id=93-895&t=onwwNalMunH3Tpit-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=33%3A197&show-proto-sidebar=1',
+      category: 'Design',
+      status: 'Completed',
+      features: [
+        'Complete user journey mapping',
+        'Interactive prototypes',
+        'Accessibility-focused design',
+        'Mobile-first approach',
+        'Design system creation'
+      ]
+    },
+    {
+      title: 'Shopping App Design',
+      description: 'A comprehensive UI/UX design for a modern shopping application. Created detailed wireframes, user flows, and high-fidelity prototypes focusing on user experience and accessibility.',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLkkccY0pu7Pw07Mjv1uvm9o-cSrMDPCe19A&s',
+      technologies: ['Figma', 'UI/UX Design', 'Prototyping', 'User Research'],
+      figmaUrl: 'https://www.figma.com/proto/t4Q4E292FMN5Rz1tvSUJ06/shopping_app?node-id=1-11&p=f&t=iDG0TJ2zNo6OkxLq-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2',
       category: 'Design',
       status: 'Completed',
       features: [
