@@ -7,7 +7,6 @@ const Experience: React.FC = () => {
     {
       title: 'Frontend Developer Intern',
       company: 'Hello RE (REpair | REbuy | REsell)',
-      period: 'Sep 2025- Present',
       location: 'Bangalore',
       type: 'Internship',
       achievements: [
