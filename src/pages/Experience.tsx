@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, calendar, MapPin, TrendingUp, Users, Zap, FileText } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, TrendingUp, Users, Zap, FileText } from 'lucide-react';
 
 const Experience: React.FC = () => {
   const experiences = [
@@ -8,6 +8,7 @@ const Experience: React.FC = () => {
       title: 'Frontend Developer Intern',
       company: 'Hello RE (REpair | REbuy | REsell)',
       location: 'Bangalore',
+      period: 'present',
       type: 'Internship',
       achievements: [
         'Contributing to the development of JavaScript and Vue.js based web applications.',
