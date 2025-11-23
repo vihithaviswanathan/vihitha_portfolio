@@ -46,10 +46,11 @@ const About: React.FC = () => {
   ];
 
   const skills = {
-    'Languages & Frameworks': ['JavaScript','Vue.js (composition API)' ,'SQL', 'Core Java'],
-    'Design Tools': ['Figma', 'Canva', 'Adobe Express'],
-    'Tools & Concepts': ['GitHub', 'VS Code', 'Networking Fundamentals'],
-    'Soft Skills': ['Communication', 'Teamwork', 'Creativity']
+    'Languages & Frameworks': ['JavaScript','Vue.js (composition API)' ,'Angular(Basics)'],
+    'Design Tools': ['Figma', 'Canva', 'Affinity'],
+    'Developer Tools & Skills': ['Git & Version Control', 'JWT Authentication', 'Responsive Web Design']
+    'Soft Skills': ['Team Collaboration', 'Problem Solving', 'Creativity', 'Adaptability']
+
   };
 
   return (
