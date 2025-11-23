@@ -48,7 +48,7 @@ const About: React.FC = () => {
   const skills = {
     'Languages & Frameworks': ['JavaScript','Vue.js (composition API)' ,'Angular(Basics)'],
     'Design Tools': ['Figma', 'Canva', 'Affinity'],
-    'Developer Tools & Skills': ['Git & Version Control', 'JWT Authentication', 'Responsive Web Design']
+    'Developer Tools & Skills': ['Git & Version Control', 'JWT Authentication', 'Responsive Web Design'],
     'Soft Skills': ['Team Collaboration', 'Problem Solving', 'Creativity', 'Adaptability']
 
   };
